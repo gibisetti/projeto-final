@@ -153,3 +153,11 @@ body {
 .menu__mobile {
     display: none;
 }
+
+.botao-calcular{
+    border-radius: 10px;
+    border: 1px solid #8b3951;
+    margin: 10px 0;
+    font-family: 'Roboto', sans-serif;
+    padding: 8px;
+}
