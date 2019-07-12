@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    font-family: 'Literata', serif;
+}
+
+body {
+    background-color: #d2d2d2;
+}
+
+.navegacao {
+    position: fixed;
+    width: 100%;
+    padding: 6px 0 6px 0;
+    background-color: white;
+}
+
+.nav__container {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navegacao a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 20px;
+    margin: 5px;
+}
+
+.nav__usuario {
+    margin-right: 3px;
+}
+
+.nav__usuario a {
+    border-radius: 10px;
+    border: #8b3951 1px solid;
+    padding: 0 10px;
+    font-size: 18px;
+    margin: 3px;
+}
+
+.cabecalho {
+    width: 70%;
+    margin: 0 auto;
+    background-color: #3f3f3f;
+}
+
+.cabecalho__img {
+    width: 100%;
+}
+
+.apresentacao {
+    background-color: #f5eded;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.apresentacao__texto {
+    font-size: 16px;
+    width: 88%;
+    margin: 0 auto;
+    padding: 29px 65px;
+    text-align: justify;
+}
+
+.faixa {
+    display: block;
+    background-image: linear-gradient(to bottom, #f4f4f700, rgba(255, 255, 255, 1));
+    margin: 0;
+    height: 6px;
+}
+
+.receita__container {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    background-color: white;
+}
+
+.receita__texto {
+    font-size: 16px;
+    padding: 11px 64px;
+    width: 52%;
+}
+
+.texto__letra-menor {
+    font-size: 10px;
+}
+
+.receita__input {
+    margin-bottom: 20px;
+}
+
+.input {
+    border-radius: 10px;
+    border: 1px solid #8b3951;
+    margin: 10px 0;
+    font-family: 'Roboto', sans-serif;
+    padding: 4px;
+}
+
+.despesas {
+    width: 70%;
+    margin: 0 auto;
+    background-color: white;
+}
+
+.despesas__container {
+    width: 88%;
+    margin: 0 auto;
+    padding-top: 10px;
+    font-size: 16px;
+}
+
+.titulo {
+    font-size: 18px;
+}
+
+.categoria {
+    font-weight: bold;
+}
+
+.resumo {
+    background-color: #f5eded;
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0;
+}
+
+.rodape {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    font-size: 10px;
+}
+
+/* .total-receita {
+    text-align: center;
+}
+
+.botao-calcular {
+    text-align: center;
+} */
+
+.total {
+    text-align: center;
+}
+
+.menu__mobile {
+    display: none;
+}

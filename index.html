@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="./img/tt.png">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./script.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Literata|Roboto&display=swap" rel="stylesheet">
+    <title>Economy Woman</title>
+</head>
+
+<body>
+
+    <nav class="navegacao">
+
+        <div class="nav__container">
+            <!-- logo -->
+            <a href="#"><img class="nav__logo" src="./img/logo nav.PNG" alt="logo-nav"></a>
+
+            <!-- links nav -->
+            <div class="nav__links">
+                <a href="#sobre">Sobre</a>
+                <a href="#receita">Receita</a>
+                <a href="#despesas">Despesas</a>
+                <a href="#resumo">Resumo</a>
+            </div>
+
+            <!-- login e cadastro -->
+            <div class="nav__usuario">
+                <a href="">Entrar</a>
+                <a href="">Cadastre-se</a>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- cabeçalho -->
+    <header class="cabecalho">
+        <img class="cabecalho__img" src="./img/getting-business-finances-in-order_4460x4460 (1) (1) (1).jpg" alt="">
+        </section>
+    </header>
+
+    <!-- apresentação -->
+    <section id="sobre" class="apresentacao">
+        <div class="apresentacao__texto">
+            <h1 class="titulo">Sobre</h1>
+            <p>Economy Woman tá aqui pra te ajudar a cuidar melhor das suas despesas e não bater aquele desespero de não
+                ter dinheiro pra pagar alguma conta porque esqueceu e gastou tudo.</p>
+            <p>Você conta pra gente um pouco do seu estilo de vida e a gente traça um perfil de gastos pra te ajudar a
+                ficar esperta nos próximos meses. Um dos maiores focos é se libertar do cartão de crédito para as
+                pequenas coisas e usar quando houver
+                uma real necessidade. </p>
+            <p>Vamos mapear seus gastos e fazer projeções para os meses futuros, você também pode selecionar as despesas
+                pra incluir ou não no seu resumo.</p>
+        </div>
+        <span class="faixa"></span>
+    </section>
+
+
+
+    <!-- receita -->
+    <section id="receita" class="receita">
+
+        <div class="receita__container">
+            <article class="receita__texto">
+
+                <h1 class="titulo">Receita</h1>
+
+                <div class="receita__input">
+                    <p>Agora, conta pra gente, qual o seu salário líquido?</p>
+                    <p class="texto__letra-menor">Pode ser a média dos últimos 3 meses. Caso receba hora extra, dos
+                        ultimos 6;<br> (apenas o salário, não precisa incluir os benefícios.)</p>
+                    <input class="input" id="salario" type="number" min="1" name="salario liquido">
+                </div>
+
+                <div class="receita__input">
+                    <p>Legal. E quando cai a grana?</p>
+                    <label for="numero-escolhido">Dia</label>
+                    <input class="input" type="number" min="1" max="30" name="payday">
+                </div>
+
+                <div class="receita__input">
+                    <p>E você possui outros ganhos, alguma outra renda?</p>
+                    <input type="radio" name="outros ganhos" value="Sim">
+                    <span>Sim</span>
+                    <input type="radio" name="outros ganhos" value="Não">
+                    <span>Não</span>
+                    <input class="input" id="ganhos" type="number" min="1" name="outros ganhos">
+                </div>
+            </article>
+
+        </div>
+
+    </section>
+
+    <!-- despesas -->
+
+    <section id="despesas" class="despesas">
+        <span class="faixa"></span>
+        <div class="despesas__container">
+            <h1 class="titulo">Despesas</h1>
+            <p class="despesas__texto">Agora vamos traçar seu perfil e mapear suas despesas fixas e eventuais para
+                projetar os gastos futuros</p>
+
+            <p class="texto__letra-menor">
+                Lembrando que é só o que você gasta em dinheiro, não inclui beneficios (VA, VR, etc.)
+            </p>
+
+
+            <div class="perfil">
+                <label for="Fuma">Fuma?</label>
+                <input type="radio" name="Fuma" value="Sim">
+                <span>Sim</span>
+                <input type="radio" name="Fuma" value="Não">
+                <span>Não</span>
+            </div>
+
+            <div class="perfil">
+                <label for="filhos">Tem filhos?</label>
+                <input type="radio" name="filhos" value="Sim">
+                <span>Sim</span>
+                <input type="radio" name="filhos" value="Não">
+                <span>Não</span>
+            </div>
+
+            <div class="perfil">
+                <label for="Pets">Pets?</label>
+                <input type="radio" name="Pets" value="Sim">
+                <span>Sim</span>
+                <input type="radio" name="Pets" value="Não">
+                <span>Não</span>
+            </div>
+
+            <div class="perfil">
+                <label for="Carro">Carro?</label>
+                <input type="radio" name="Carro" value="Sim">
+                <span>Sim</span>
+                <input type="radio" name="Carro" value="Não">
+                <span>Não</span>
+            </div>
+
+
+
+            <!-- Moradia -->
+            <div class="moradia">
+                <p class="categoria">Moradia:</p>
+
+                <div class="">
+                    <label for="aluguel">Aluguel R$</label>
+                    <input class="input" type="number" min="1" name="aluguel">
+                </div>
+
+                <div class="">
+                    <label for="financiamento">Financiamento</label>
+                    <input class="input" type="number" min="1" name="financiamento">
+                </div>
+
+                <div class="">
+                    <label for="entrada empreedimento">Entrada empreedimento</label>
+                    <input class="input" type="number" min="1" name="entrada empreedimento">
+                </div>
+
+                <div class="">
+                    <label for="Condomínio">Condomínio</label>
+                    <input class="input" type="number" min="1" name="Condomínio">
+                </div>
+
+                <div class="">
+                    <label for="outros-saude">Outros</label>
+                    <input class="input" type="text" name="outros-saude">
+                    <input class="input" type="number" min="1" name="outros-saude">
+                </div>
+
+                <div class="">
+                    <label for="manutecao">Manutenção da Casa</label>
+                    <input class="input" type="text" name="manutecao">
+                    <input class="input" type="number" min="1" name="manutecao">
+                    <p>(Escreva todos e insira a soma no campo do valor)</p>
+                </div>
+            </div>
+
+
+            <!-- Contas: -->
+            <div class="contas">
+                <p class="categoria">Contas:</p>
+
+                <div class="">
+                    <label for="agua">Água</label>
+                    <input class="input" type="number" min="1" name="agua">
+                </div>
+
+                <div class="">
+                    <label for="Luz">Luz</label>
+                    <input class="input" type="number" min="1" name="Luz">
+                </div>
+
+                <div class="">
+                    <label for="Celular">Celular</label>
+                    <input class="input" type="number" min="1" name="Celular">
+                </div>
+
+                <div class="">
+                    <label for="outros-saude">Outros</label>
+                    <input class="input" type="text" name="outros-saude">
+                    <input class="input" type="number" min="1" name="outros-saude">
+                </div>
+            </div>
+
+            <!-- Alimentação -->
+            <div class="alimentacao">
+                <p class="categoria">Alimentação:</p>
+
+                <div class="">
+                    <label for="mercado">mercado</label>
+                    <input class="input" type="number" min="1" name="mercado">
+                </div>
+
+                <div class="">
+                    <label for="açougue">açougue</label>
+                    <input class="input" type="number" min="1" name="açougue">
+                </div>
+
+                <div class="">
+                    <label for="sacolão/feira">sacolão/feira</label>
+                    <input class="input" type="number" min="1" name="sacolão/feira">
+                </div>
+
+                <div class="">
+                    <label for="padaria">padaria</label>
+                    <input class="input" type="number" min="1" name="padaria">
+                </div>
+
+                <div class="">
+                    <label for="outros-saude">Outros</label>
+                    <input class="input" type="text" name="outros-saude">
+                    <input class="input" type="number" min="1" name="outros-saude">
+                </div>
+            </div>
+
+
+            <!-- Serviços -->
+            <div class="servicos">
+                <p class="categoria">Serviços:</p>
+
+                <div class="">
+                    <label for="Telefone/internet/tv">Telefone/Internet/Tv a cabo</label>
+                    <input class="input" type="text" placeholder="Net, Sky, Oi, etc." name="Telefone/internet/tv">
+                    <input class="input" type="number" min="1" name="Telefone/internet/tv">
+                </div>
+
+                <div class="">
+                    <label for="Streming-Tv">Streming Tv</label>
+                    <input class="input" type="text" placeholder="Netflix, Crunchyroll, Amazon, etc."
+                        name="Streming-Tv">
+                    <input class="input" type="number" min="1" name="Streming-Tv">
+                    <p>(Escreva todos e insira a soma no campo do valor)</p>
+                </div>
+
+                <div class="">
+                    <label for="Streming-musica">Streming Música</label>
+                    <input class="input" type="text" placeholder="Spotify, Deezer, Apple Music, YouTube"
+                        name="Streming-musica">
+                    <input class="input" type="number" min="1" name="Streming-Tv">
+                    <p>(Escreva todos e insira a soma no campo do valor)</p>
+                </div>
+
+                <div class="">
+                    <label for="outros-saude">Outros</label>
+                    <input class="input" type="text" name="outros-saude">
+                    <input class="input" type="number" min="1" name="outros-saude">
+                </div>
+            </div>
+
+            <!-- Educação -->
+            <div class="alimentacao">
+                <p class="categoria">Educação:</p>
+
+                <div class="">
+                    <label for="Faculdade">Faculdade</label>
+                    <input class="input" type="number" min="1" name="Faculdade">
+                </div>
+
+                <div class="">
+                    <label for="Escola">Escola</label>
+                    <input class="input" type="number" min="1" name="Escola">
+                </div>
+
+                <div class="">
+                    <label for="Cursos">Cursos</label>
+                    <input class="input" type="number" placeholder="Caso haja mais de um, coloque a soma" min="1"
+                        name="Cursos">
+                </div>
+            </div>
+
+            <!-- Saúde  -->
+            <div class="saude">
+                <p class="categoria">Saúde:</p>
+                <p class="texto__letra-menor">(despesas não cobertas pelo plano de saúde):</p>
+
+                <div class="">
+                    <label for="Terapia">Terapia</label>
+                    <input class="input" type="number" min="1" name="Terapia">
+                </div>
+
+                <div class="">
+                    <label for="Exames">Exames</label>
+                    <input class="input" type="number" min="1" name="Exames">
+                </div>
+
+                <div class="">
+                    <label for="medicamentos">medicamentos</label>
+                    <input class="input" type="number" min="1" name="medicamentos">
+                </div>
+
+                <div class="">
+                    <label for="Dentista">Dentista</label>
+                    <input class="input" type="number" min="1" name="Dentista">
+                </div>
+
+                <div class="">
+                    <label for="outros-saude">Outros</label>
+                    <input class="input" type="text" name="outros-saude">
+                    <input class="input" type="number" min="1" name="outros-saude">
+                </div>
+            </div>
+
+
+            <!-- Pets -->
+            <div class="pets">
+                <p class="categoria">Pets</p>
+
+                <div class="">
+                    <label for="ração">ração</label>
+                    <input class="input" type="number" min="1" name="ração">
+                </div>
+                <div class="">
+                    <label for="areia">areia</label>
+                    <input class="input" type="number" min="1" name="areia">
+                </div>
+                <div class="">
+                    <label for="jornal">jornal/caixa higiênica</label>
+                    <input class="input" type="number" min="1" name="jornal">
+                </div>
+                <div class="">
+                    <label for="agrado">agrado</label>
+                    <input class="input" type="text" placeholder="brinquedo, sachês, ossos, etc." name="outros-saude">
+                    <input class="input" type="number" min="1" name="agrado">
+                    <p>(Escreva todos e insira a soma no campo do valor)</p>
+                </div>
+                <div class="">
+                    <label for="Outros">Outros</label>
+                    <input class="input" type="text" name="outros-pets">
+                    <input class="input" type="number" min="1" name="Outros">
+                    <p>(Escreva todos e insira a soma no campo do valor)</p>
+                </div>
+            </div>
+
+            <!-- Filhos -->
+            <div class="filhos">
+                <p class="categoria">Filhos</p>
+                <p class="texto__letra-menor">(que não estiver incluso na compra do mercado como leite e fraldas)</p>
+
+                <div class="">
+                    <label for=" fralda"> fralda</label>
+                    <input class="input" type="number" min="1" name=" fralda">
+                </div>
+
+                <div class="">
+                    <label for="roupas">roupas</label>
+                    <input class="input" type="number" min="1" name="roupas">
+                </div>
+
+                <div class="">
+                    <label for="brinquedos">brinquedos</label>
+                    <input class="input" type="number" min="1" name="brinquedos">
+                </div>
+
+                <div class="">
+                    <label for="outros-saude">Outros</label>
+                    <input class="input" type="text" name="outros-saude">
+                    <input class="input" type="number" min="1" name="outros-saude">
+                </div>
+            </div>
+
+            <div class="filhos">
+                <p class="categoria">Filhos</p>
+                <p class="texto__letra-menor">(que não estiver incluso na compra do mercado como leite e fraldas)</p>
+                Dívidas Tem alguma dívida que quer pagar ou já está pagando?
+                <div class="">
+                    <label for="dividas">Parcela</label>
+                    <input class="input" type="number" min="1" name="dividas">
+                </div>
+
+                <div class="cartao credito">
+                    <p class="categoria">Cartão de Crédito</p>
+                    <p class="texto__letra-menor">Como estão suas despesas no cartão?</p>
+
+                    <div class="">
+                        <label for="cartao-credito">Média de fatura</label>
+                        <input class="input" type="number" min="1" name="cartao-credito">
+                    </div>
+                </div>
+
+
+                <div class="outros">
+                    <p class="categoria">Outros</p>
+                    <div class="">
+                        <label for="gasolina">Gasolina</label>
+                        <input class="input" type="number" min="1" name="gasolina">
+                    </div>
+
+                    <div class="">
+                        <label for="poupanca">Poupança</label>
+                        <input id="poupanca" class="input" type="number" min="1" name="poupanca">
+                    </div>
+
+                    <div class="">
+                        <label for="previdencia-privada">Previdência privada</label>
+                        <input id="previdencia" class="input" type="number" min="1" name="previdencia-privada">
+                    </div>
+
+                    <div class="">
+                        <label for="cigarro">Cigarro</label>
+                        <input id="cigarro" class="input" type="number" min="1" name="cigarro">
+                    </div>
+                </div>
+            </div>
+
+           <p>Ótimo! Confira os valores e clique em 'OK' para calcular o total.</p> 
+            <button id="calcular" class="botao-calcular" onclick="totais()">
+                Ok
+            </button>
+    </section>
+
+
+    <!-- Resumo -->
+    <section id="resumo" class="resumo">
+
+        <div class="total">
+            <p class="categoria">Total Receita</p>
+            <p id="total-receita" class="total-receita"></p>
+        </div>
+
+
+        <div class="total">
+            <p class="categoria">Total Despesas</p>
+            <p id="total-despesas" class="total-despesas"></p>
+        </div>
+
+        <div class="total">
+            <p class="categoria">Diferença</p>
+            <p id="total-diferenca" class="diferenca"></p>
+        </div>
+    </section>
+
+    <footer class="rodape">
+        <p>Dúvidas? Mande um e-mail para ....</p>
+
+        <p>Desenvolvido por Giovanna Bisetti</p>
+
+    </footer>
+</body>
+
+</html>
